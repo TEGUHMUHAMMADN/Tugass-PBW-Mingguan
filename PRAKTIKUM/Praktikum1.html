@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Form utama untuk menginput data -->
+    <form action="" method="post">
+        <label>
+        <!-- Input text wajib diisi -->
+        <input type="text" name="nama"required palceholder="Masukkan nama Anda">
+        </label>
+        <br>
+
+        <label>
+        <!-- Textarea untuk komentar -->
+        <textarea name="komentar" rows="4" cols="50" placeholder="Masukan komentar Anda"></textarea>
+    </label>
+    <br>
+
+    <label>
+        <!-- Drop pilihan -->
+        <select name="pilihan">
+            <option value="1">Pilihan 1</option>
+            <option value="2">Pilihan 2</option>
+        </select>
+    </label>
+    <br>
+
+    <label>
+        <!-- Radio button untuk memilih gender -->
+        <label><input type="radio" name="gender" value= "male">Laki-laki</label>
+        <label><input type="radio" name="gender" value="female">Perempuan</label>
+    </label>
+    <br>
+    
+    <label>
+        <!-- Checkbox untuk memilih hobi -->
+        <label><input type="checkox" name="hobi" value= "musik">Musik</label>
+        <label><input type="checkbox" name="gender" value="female">Perempuan</label>Olahraga</label>
+        <label><input type="checkbox" name="hobi" value="membaca">Membaca</label>
+    </label>
+    <br>
+
+        <!-- Tombol submit -->
+        <button type="submit">Kirim</button>
+    </form>
+
+    <!-- Tombol dengan event onclick untuk menampilkan alert -->
+    <button type="button" onclick="alert('Halo!')">Klik Saya</button>
+    
+    <label>
+    <!-- form untuk mengunggah file -->
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="file">Pilih File:</label>
+        <input type="file" id="file" name="file"><br>
+        <button type="submit">Unggah</button><br>
+
+        <!-- Input tambahan dengan validasi -->
+        <input type="text" name="username" required minlength="5" maxlength="20" placeholder="Masukkan username"><br>
+        <input type="email" name="email" required placeholder="Masukkan email"><br>
+        <input type="number" name="age" min="18" max="60" placeholder="Umur"><br>
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>
